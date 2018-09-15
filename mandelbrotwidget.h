@@ -28,24 +28,24 @@ signals:
                         double scaleFactor, int iterationMax);
 
 protected:
-    void paintEvent(QPaintEvent *event) override;
-    void resizeEvent(QResizeEvent *event) override;
-    void wheelEvent(QWheelEvent *event) override;
-    void mousePressEvent(QMouseEvent *event) override;
-    void mouseMoveEvent(QMouseEvent *event) override;
+    void      paintEvent(QPaintEvent  *event) override;
+    void     resizeEvent(QResizeEvent *event) override;
+    void      wheelEvent(QWheelEvent  *event) override;
+    void mousePressEvent(QMouseEvent  *event) override;
+    void  mouseMoveEvent(QMouseEvent  *event) override;
 
 private:
     QRgb generateColorFromIteration(int iteration);
 
 private:
     MandelbrotCalculator mMandelbrotCalculator;
-    QThread mThreadCalculator;
-    double mScaleFactor;
-    QPoint mLastMouseMovePosition;
-    QPointF mMoveOffset;
-    QSize mAreaSize;
-    int mIterationMax;
-    QImagePtr mImage;
+                 QThread mThreadCalculator;
+                  double mScaleFactor;
+                  QPoint mLastMouseMovePosition;
+                 QPointF mMoveOffset;
+                   QSize mAreaSize;
+                     int mIterationMax;
+               QImagePtr mImage;
 };
 
 #endif // MANDELBROTWIDGET_H

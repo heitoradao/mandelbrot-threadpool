@@ -6,10 +6,10 @@
 
 using namespace std;
 
-const int ITERATION_MAX = 4000;
-const double DEFAULT_SCALE = 0.005;
-const double DEFAULT_OFFSET_X = -0.74364390249094747;
-const double DEFAULT_OFFSET_Y = 0.13182589977450967;
+const    int ITERATION_MAX    = 4000;
+const double DEFAULT_SCALE    =    0.005;
+const double DEFAULT_OFFSET_X =   -0.74364390249094747;
+const double DEFAULT_OFFSET_Y =    0.13182589977450967;
 
 MandelbrotWidget::MandelbrotWidget(QWidget *parent)
     : QWidget(parent)
@@ -79,9 +79,9 @@ void MandelbrotWidget::paintEvent(QPaintEvent *event)
     painter.setPen(Qt::white);
 
     painter.drawText(10, 20, tr("Size: %1 x %2").arg(mImage->width())
-                                                     .arg(mImage->height()));
+                                                .arg(mImage->height()));
     painter.drawText(10, 40, tr("Offset: %1 x %2").arg(mMoveOffset.x())
-                                                       .arg(mMoveOffset.y()));
+                                                  .arg(mMoveOffset.y()));
     painter.drawText(10, 60, tr("Scale: %1").arg(mScaleFactor));
     painter.drawText(10, 80, tr("Max iteration: %1").arg(ITERATION_MAX));
 
