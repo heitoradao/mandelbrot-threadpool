@@ -1,8 +1,14 @@
-# Yet another Mandelbrot set implementation
+### My Mandelbrot set fractal implementation
 
-This program renders the Mandelbrot set.
-It is implemented with Qt/C++ using threads.
+![example of rendering](docs/screenshot.png "Screenshot 1")
 
-![example of rendering](docs/screenshot.png "Screenshot")
+![example of rendering](docs/screenshot2.png "Screenshot 2")
 
-![example of rendering](docs/screenshot2.png "Screenshot")
+### Whats is it?
+
+This Qt Widgets / C++ desktop app, draw fractals.
+It renders the Mandelbrot set.
+
+### Purpose
+
+To learn concurrent programming. For the Art.
