@@ -6,9 +6,10 @@
 
 ### Whats is it?
 
-This Qt Widgets / C++ desktop app, draw fractals.
+This Qt Widgets / C++ desktop app draw fractals.
+
 It renders the Mandelbrot set.
 
 ### Purpose
 
-To learn concurrent programming. For the Art.
+To learn parallel programming. To the beauty & art.
